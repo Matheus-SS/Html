@@ -1,0 +1,336 @@
+/*--------------------------CSS DA PAGINA INDEX-------------------------------------*/
+*{
+	font-family: arial;
+}
+body{
+	margin: 0px;
+	padding: 0px;
+}
+.topo{
+	height: 50px;
+	background-color: #332D30;
+}
+.topointerior{
+	max-width: 1000px;
+	width: 100%;
+	margin: auto;
+	color:white;
+}
+.logo{
+	float:left;
+	font-size:30px;
+	line-height: 50px;
+	color:#b5ad9c;
+	font-family: Gravitas One;
+	padding-left: 20px;
+}
+.menu{
+	float:right;
+}
+.menu ul{
+	margin: 0px;
+	padding:0px;
+	list-style: none;
+}
+.menu li{
+	margin: 0px;
+	padding:0px;
+	list-style: none;
+	float: left;
+	padding-right: 10px;
+	padding-left: 10px;
+	line-height: 50px;
+	font-size: 14px;
+	cursor: pointer;
+	color: #b5ad9c;
+}
+.menu li:hover{
+	background-color:#ECE5E8;
+	color:#b5ad9c;
+
+}
+.banner{
+	height: 300px;
+	background-color: #ECE5E8;
+}
+.bannerinterior{
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+}
+.bannerdireita{
+	float: right;
+}
+.banneresquerda{
+	float: left;
+}
+
+.fotobanner{
+	height: 300px;
+}
+
+
+.logoimagem{
+	height: 250px;
+	width: 300px;
+}
+a{
+	text-decoration: none;
+
+}
+a:visited{
+color:#332D30;
+}
+
+.botao{ 
+	background-color: #b5ad9c;
+	text-align: center;
+	font-family: Gravitas One;
+	font-size: 20px;
+	margin-left: 60px;
+	width: 170px;
+	border-radius: 15px; 
+	height: 30px;
+	line-height: 30px;
+
+}
+.botao:hover{
+	background-color:#332D30;
+	color: #b5ad9c;
+	cursor: pointer;
+}
+.conteudo{
+	clear: both;
+}
+.conteudointerno{
+	max-width: 1000px;
+	width: 103%;
+	margin:auto ;
+
+}
+
+.modelodestaque{
+text-align: center;
+font-size: 30px;
+height: 90px;
+line-height: 90px;
+font-family: Gravitas One;
+}
+
+.fotos img{
+	background-color: #efefef;
+	height: 503px;
+	width: 222px;
+	margin-right: 10px;
+	margin-left: 10px;
+	border: 1px solid black;
+}
+.fotos img:hover{
+	 box-shadow: 5px 5px 20px #888888;
+	 cursor:pointer;
+}
+.rodape{
+
+	background-color: #332D30;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	color: #FFFFFF;
+	margin-top:20px;
+	
+	position: relative;
+	bottom: 0;
+	width: 100%;
+
+}
+.rodape a{
+	color:#FFFFFF;
+	text-decoration: none;
+}
+.icone{
+	float:right;
+	padding-right: 20px;
+}
+.iconeredesocial:hover{
+	animation: bounce 1s;
+	 cursor:pointer;
+}
+/* FAZER PULAR A IMAGEM*/
+@keyframes bounce{
+	0%,20%,60%,100%{
+		-webkit-transform:translateY(0);
+		transform: translateY(0);
+	}
+    	40%{
+    	-webkit-transform:translateY(-20px);
+		transform: translateY(-20px);
+}
+  	80%{
+    	-webkit-transform:translateY(-10px);
+		transform: translateY(-10px);
+}
+
+}
+
+
+
+/*--------------------------CSS DA PAGINA INSCRICOES-------------------------------------*/
+
+.formulario{
+height: 800px;
+
+}
+.formulariointerno{
+	width: 1000px;
+
+}
+
+.imageminscricao{
+	margin-top: 130px;
+	float: left;
+	margin-left: 70px;
+}
+.formulariodireita{
+	float: right;
+	margin-top: 30px;
+	margin-right: 70px;
+}
+input[type=text]{
+	width: 300px;
+	height: 25px;
+	border: solid black 2px;
+	background-color: #E6E6E6;
+	border-radius: 10px;
+	}
+input[type=email]{
+	width: 300px;
+	height: 25px;
+	border: solid black 2px;
+	background-color: #E6E6E6;
+	border-radius: 10px;
+	}
+select{
+	border: solid black 2px;
+	background-color: #E6E6E6;
+	border-radius: 10px;
+}
+h3{
+	font-family:Gravitas One;
+	font-size:25px; 
+	margin-left: 70px;
+}
+
+
+input[type=submit]{
+	margin-top: 20px;
+	margin-left: 40%;
+	width: 100px;
+	height: 25px;
+	border-radius: 20px;
+}
+
+input:hover[type=submit]{
+	background-color:#332D30;
+	color: #b5ad9c;
+	cursor: pointer;
+}
+
+/*-------------------------CSS DA PAGINA SOBRE ----------------------------------------------*/
+
+.conteudosobre{
+	height: 600px;
+}
+.internosobre{
+	width: 100%;
+	max-width: 1000px
+	margin:auto;
+}
+p{
+	margin-top: 20px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+.titulosobre{
+	font-family: Gravitas One;
+	text-align: center;
+	margin-top: 30px;
+	color: #332D30;
+}
+.logosobre{
+	height: 300px;
+	width: 300px;
+	margin:auto;
+}
+
+
+/*---------------------------------CSS DA PAGINA CONTATO----------------------------------------------*/
+.formulariocontato{
+	height: 500px;
+}
+#rolagem{
+	overflow: hidden;
+}
+
+.imagemcontato{
+	margin-top: 30px;
+	float: right;
+	margin-left: 70px;
+}
+.formularioesquerda{
+	float: left;
+	margin-top: 30px;
+	margin-left: 40px;
+}
+.botaocontato input[type="submit"]{
+	width: 100px;
+	height: 30px;
+	margin-left: 150px;
+	border-radius: 20px;
+}
+textarea{
+		width: 400px;
+	height: 100px;
+	border: solid black 2px;
+	background-color: #E6E6E6;
+	border-radius: 10px;
+	}
+/*---------------------------------CSS DA PAGINA MODELO-----------------------------------*/
+.modeloarea{
+	height: 900px;
+	
+}
+.modeloareainterno{
+	max-width: 1000px;
+	width: 100%;
+	padding-top: 10px;
+	margin: auto;
+
+}
+
+.fotosmodelo{
+	border: 1px solid black;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 20px;
+	float: left;
+	width: auto;
+}
+
+.fotosmodelo img{
+	background-color: #efefef;
+	height: 294px;
+	width: 222px;
+
+}
+
+.descricao{
+	padding: 15px;
+    text-align: center;
+}
+
+.fotosmodelo:hover{
+	 box-shadow: 5px 5px 20px #888888;
+	 cursor:pointer;
+	 
+}
+

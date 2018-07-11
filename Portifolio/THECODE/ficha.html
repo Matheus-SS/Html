@@ -1,0 +1,281 @@
+<!DOCTYPE-html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style type="text/css">
+
+
+body{
+background-color:grey
+}
+::-webkit-input-placeholder {
+   font-style: italic;
+}
+:-moz-placeholder {
+   font-style: italic;  
+}
+::-moz-placeholder {
+   font-style: italic;  
+}
+:-ms-input-placeholder {  
+   font-style: italic; 
+}
+label{
+color:black
+}
+form input[type=text]{
+border:2px solid black;
+}
+form input[type=email]{
+border:2px solid black;
+}
+form select[type=text]{
+border:2px solid black;
+}
+h1{
+color:white;
+font-family:Agency FB;
+background-color:black;
+padding:3px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+body{
+overflow-x:hidden;
+}
+</style>
+</head>
+
+<body>
+ 
+
+<nav class="navbar navbar-inverse fixed-top"> 	<!--INICIO NAVBAR-->
+	<div class="conteiner-fluid">		<!--INICIO CONTEINER NAVBAR-->
+		<div class="navbar-header">		<!--INICIO NAVBAR-HEADER-->
+			<a class="navbar-brand" href="index.html">MSS Cursos</a>
+		</div> <!-- FIM NAVBAR HEADER-->
+		<ul class="nav navbar-nav">
+			<li class="active"><a href="index.html">Home</a></li>
+			<li><a href="ficha.html">Inscreva-se</a></li>
+			<li><a href="contato.html">Contato</a></li>
+			<li><a href="#"></a></li>
+		</ul>	
+	</div> <!--FIM DO DIV CONTEINER FLUID-->
+
+</nav> <!--FIM DO NAVBAR-->	
+
+
+<h1 align="center" > Inscrição MSS Cursos</h1>
+
+<form name="formulario" class="form-horizontal" enctype="text/plain" method="post" action="mailton:froste43@gmail.com">
+
+	<div class="conteiner">
+        
+		
+		   
+			
+		</br>	<div class="form-group"> 
+			<label for="email" class="control-label col-sm-2">Email:</label>
+				<div class="col-sm-6" >
+				<input type="email" id="email" required class="form-control" placeholder="João_Paulo@gmail.com" />
+			</div>
+        </div>
+
+        <div class="form-group">
+            <label for="nome" class="control-label col-sm-2">Nome:</label>
+				<div class="col-sm-6">
+			<input type="text" id="nome" required class="form-control" placeholder="João Paulo Neto dos Santos"/>
+				</div>
+        </div>
+
+        <div class="form-group">
+            <label for="sexo" class="control-label col-sm-2">Sexo:</label>
+            <div class="col-sm-2">
+			<select name="sexo" id="sexo" class="form-control" type="text">
+                <option value="" selected></option>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+            </select>
+        </div>
+		</div>
+
+        <div class="form-group">
+            <label for="curso" class="control-label col-sm-2">Curso:</label>
+            <div class="col-sm-4">
+			<select name="curso" id="curso" class="form-control" type="text" onchange="mudarSelect();">
+                <option value="" selected>Selecione um curso</option>
+                <option value="informatica">Curso Técnico em Informatica</option>
+                <option value="alimentos">Curso Técnico em Alimentos</option>
+                <option value="agropecuaria">Curso Técnico em Agropecuaria</option>
+            </select>
+			</div>
+        </div>
+		
+		<div class="form-group">
+<label for="horario" class="control-label col-sm-2">Horario:</label>
+<div class="col-sm-4">
+<select name ="horario" id="horario" class="form-control" type="text">
+<option value="">Selecione um horario</option>
+
+</select>
+</div>
+</div>
+
+        <div class="form-group">
+            <label for="endereco" class="control-label col-sm-2">Endereço para correspondência:</label>
+            <div class="col-sm-6">
+			<input type="text" id="endereco" required class="form-control" placeholder="Rua Buenos Aires N°43"/>
+
+        </div>
+		</div>
+        <div class="form-group">
+            <label for="complemento" class="control-label col-sm-2">Complemento do endereço</label>
+           <div class="col-sm-4">
+		   <input type="text" id="complemento" required class="form-control" placeholder="Ex.: Casa,fundos,apartamento,quadra etc." />
+        </div>
+		</div>
+       
+	   <div class="form-group">
+            <label for="cep" class="control-label col-sm-2">CEP</label>
+            <div class="col-sm-4">
+			<input type="text" id="cep" required class="form-control" placeholder="32145-678"/>
+        </div>
+		</div>
+
+        <div class="form-group">
+			<label for="municipio" class="control-label col-sm-2">Municipio</label>
+			<div class="col-sm-4">
+		<input type="text" id="municipio" required class="form-control" placeholder="Campos dos Goytacazes"/>
+		</div>
+		<div class="col-sm-2">
+		 <select name="uf" id="uf" class="form-control" type="text">
+                <option value="AC">AC</option>
+                <option value="AL">AL</option>
+                <option value="AP">AP</option>
+                <option value="AM">AM</option>
+                <option value="BA">BA</option>
+                <option value="CE">CE</option>
+                <option value="DF">DF</option>
+                <option value="ES">ES</option>
+                <option value="GO">GO</option>
+                <option value="MA">MA</option>
+                <option value="MS">MS</option>
+                <option value="MT">MT</option>
+                <option value="MG">MG</option>
+                <option value="PA">PA</option>
+                <option value="PB">PB</option>
+                <option value="PR">PR</option>
+                <option value="PE">PE</option>
+                <option value="PI">PI</option>
+                <option value="RJ">RJ</option>
+                <option value="RN">RN</option>
+                <option value="RS" selected>RS</option>
+                <option value="RO">RO</option>
+                <option value="RR">RR</option>
+                <option value="SC">SC</option>
+                <option value="SP">SP</option>
+                <option value="SE">SE</option>
+                <option value="TO">TO</option>
+            </select>
+
+
+
+
+		</div> <!--FIM DO DIV DO SELECT-->
+
+
+        </div> <!--FINAL DO FORMGROUP MUNICIPIO-->
+
+
+        <div align="center">
+            <button type="button submit" class="btn btn-primary">Salvar</button>
+        </div>
+		
+		
+    </div> <!--FIM DO CONTEINER-->
+	
+ 
+	</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+function mudarSelect(){
+
+        var selectCurso = document.getElementById('curso');
+        var selectHorario = document.getElementById('horario');
+	
+		
+		
+
+        var value2 = selectCurso.options[selectCurso.selectedIndex].value;
+		
+		
+		<!--REMOVER ITENS-->
+			var length = selectHorario.options.length;        
+        var i;
+        for(i = selectHorario.options.length-1 ; i>=0 ; i--)
+        {
+            selectHorario.remove(i);
+        }
+		
+         if (value2 == 'alimentos'){
+            var option = document.createElement('option');
+            option.value = '1';
+            option.text = 'Segunda-feira (9:00 - 11:00)';
+
+            var option2 = document.createElement('option');
+            option2.value = '2';
+            option2.text = 'Segunda-feira (14:00 - 16:00)';
+			
+			var option3 = document.createElement('option');
+            option3.value = '3';
+            option3.text = 'Segunda-feira (18:00 - 20:00)';
+			
+			var option4QIT1 = document.createElement('option');
+            option4QIT1.value = '4';
+            option4QIT1.text = 'Quinta-feira (9:00 - 11:00)';
+
+            var option5QIT2 = document.createElement('option');
+            option5QIT2.value = '5';
+            option5QIT2.text = 'Quinta-feira (14:00 - 16:00)';
+			
+			var option6QIT3 = document.createElement('option');
+            option6QIT3.value = '6';
+            option6QIT3.text = 'Quinta-feira (18:00 - 20:00)';
+			
+            selectHorario.add(option);
+            selectHorario.add(option2);
+			selectHorario.add(option3);
+			selectHorario.add(option4QIT1);
+            selectHorario.add(option5QIT2);
+			selectHorario.add(option6QIT3);
+
+        }   
+		if (value2 == 'informatica'){
+		 var option7 = document.createElement('option');
+		 option7.value = '7';
+		 option7.text = 'Segunda-feira (10:00 - 12:00)';
+		 
+		 selectHorario.add(option7);
+		
+    }
+}
+</script>
+
+</body>
+
+
+</html>

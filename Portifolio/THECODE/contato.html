@@ -1,0 +1,124 @@
+<!DOCTYPE-html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style type="text/css">
+body{
+background-color:grey
+}
+::-webkit-input-placeholder {
+   font-style: italic;
+}
+:-moz-placeholder {
+   font-style: italic;  
+}
+::-moz-placeholder {
+   font-style: italic;  
+}
+:-ms-input-placeholder {  
+   font-style: italic; 
+}
+label{
+color:black
+}
+form input[type=text]{
+border:2px solid black;
+}
+form input[type=email]{
+border:2px solid black;
+}
+.msg{
+border:2px solid black;
+}
+
+h1{
+color:white;
+font-family:Agency FB;
+background-color:black;
+padding:3px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+body{
+overflow-x:hidden;
+}
+#icones{
+font-size:20px;
+color:black;
+}
+</style>
+</head>
+
+<body>
+<nav class="navbar navbar-inverse fixed-top"> 	<!--INICIO NAVBAR-->
+	<div class="conteiner-fluid">		<!--INICIO CONTEINER NAVBAR-->
+		<div class="navbar-header">		<!--INICIO NAVBAR-HEADER-->
+			<a class="navbar-brand" href="index.html">MSS Cursos</a>
+		</div> <!-- FIM NAVBAR HEADER-->
+		<ul class="nav navbar-nav">
+			<li class="active"><a href="index.html">Home</a></li>
+			<li><a href="ficha.html">Inscreva-se</a></li>
+			<li><a href="contato.html">Contato</a></li>
+			<li><a href="#"></a></li>
+		</ul>	
+	</div> <!--FIM DO DIV CONTEINER FLUID-->
+
+</nav> <!--FIM DO NAVBAR-->	
+
+<h1 align="center" >Contato</h1>
+<div class="conteiner">
+<form name="contato" class="form-horizontal">
+</br>
+<div class="form-group">
+<label for="name" class="control-label col-sm-2"> Nome:</label>
+<div class="col-sm-6">
+<input type="text" class="form-control" placeholder="João Paulo Neto dos Santos" maxlength="40" required />
+</div>
+</div>
+
+<div class="form-group">
+<label for="email" class="control-label col-sm-2"> Email:</label>
+<div class="col-sm-6">
+<input type="email" class="form-control"placeholder="João_Paulo@gmail.com" maxlength="40" required />
+</div>
+</div>
+
+
+<div class="form-group">
+<label for="mensagem" class="control-label col-sm-2"> Deixe sua mensagem:</label>
+<div class="col-sm-5">
+<textarea class="form-control msg"  rows="5" placeholder="Escreva sua mensagem aqui..." maxlength="300" required ></textarea>
+<br><br>
+<div id="icones">
+<p><span class="glyphicon glyphicon-map-marker "> 
+ Duque de Caxias - Rio de Janeiro</span></p>
+ 
+ <p><span class="glyphicon glyphicon-phone-alt">
+ (21) 2662-8888</span></p>
+ 
+ <p> Segunda à sexta-feira, de 9h às 20h</p>
+</div>
+</div>
+</div>
+
+ 
+<div align="center">
+<button type ="button submit" class="btn btn-primary">Enviar</button>  
+</div>
+</form>
+
+</div>
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+
+</html>

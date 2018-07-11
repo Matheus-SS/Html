@@ -1,0 +1,125 @@
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+	<title>MS Models - Venha ser nosso modelo</title>
+	<link rel="icon" href="imagem/logo2.png" sizes="20x20">
+	<link rel="stylesheet" type="text/css" href="estilo.css"/>
+	</head>
+		<body>
+			<div class="topo">
+				<div class="topointerior">
+					<a href="index.html">
+					<div class="logo">
+						MS Models
+					</div>
+					</a>
+					<div class="menu">
+						<ul>
+						<a href="index.html"><li>HOME </li></a>
+						<a href="modelo.html"><li>MODELOS</li></a>
+						<li>INSCREVA-SE</li>
+						<a href="contato.html"><li>CONTATO</li></a>
+						<a href="sobre.html"><li>SOBRE</li></a>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="formulario">
+				<div class="formulariointerno">
+					<div class="imageminscricao">
+						<img src="imagem/logo.png">
+					</div>
+
+					<div class="formulariodireita">	
+				<form method="POST" onsubmit="enviarfuncao()">
+
+					<h3> Inscrição</h3>
+					Nome:<br>
+					<input type="text" name="nome" required/><br><br>
+					
+					E-mail:<br>
+					<input type="email" name="email" required/><br><br>
+					
+					Telefone:<br>
+					<input type="text" name="telefone"/><br><br>
+					
+					Celular:<br>
+					<input type="text" name="celular" maxlength="9" required/><br><br>
+					
+					Idade:<br>
+					<input type="text" name="idade" required/><br><br>
+					
+					Sexo:<br><br>
+					<input type="radio" name="sexo"/>Maculino<br><br>
+						 <input type="radio" name="sexo"/>Feminino<br><br>
+
+					Estado:
+					<select name="estado"> 
+						<option value="estado">Selecione o Estado</option> 
+						<option value="ac">Acre</option> 
+						<option value="al">Alagoas</option> 
+						<option value="am">Amazonas</option> 
+						<option value="ap">Amapá</option> 
+						<option value="ba">Bahia</option> 
+						<option value="ce">Ceará</option> 
+						<option value="df">Distrito Federal</option> 
+						<option value="es">Espírito Santo</option> 
+						<option value="go">Goiás</option> 
+						<option value="ma">Maranhão</option> 
+						<option value="mt">Mato Grosso</option> 
+						<option value="ms">Mato Grosso do Sul</option> 
+						<option value="mg">Minas Gerais</option> 
+						<option value="pa">Pará</option> 
+						<option value="pb">Paraíba</option> 
+						<option value="pr">Paraná</option> 
+						<option value="pe">Pernambuco</option> 
+						<option value="pi">Piauí</option> 
+						<option value="rj">Rio de Janeiro</option> 
+						<option value="rn">Rio Grande do Norte</option> 
+						<option value="ro">Rondônia</option> 
+						<option value="rs">Rio Grande do Sul</option> 
+						<option value="rr">Roraima</option> 
+						<option value="sc">Santa Catarina</option> 
+						<option value="se">Sergipe</option> 
+						<option value="sp">São Paulo</option> 
+						<option value="to">Tocantins</option> 
+					</select>
+					<br/><br/>
+
+				Cidade:<br>
+				<input type="text" name="cidade"/><br><br>
+
+				Foto:<br>
+				<input type="file" name="fotoform"/><br>
+
+				<input type="submit" name="enviar"  value="Enviar"/>
+				<script>
+					function enviarfuncao() {
+    					alert("Inscrição completa. Obrigado por escolher a MS Models");
+							}
+						</script>
+
+
+				</form>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="rodape ">
+			 &copy Copyright Matheus Santos RJ 2018 - Todos os direitos reservados. Logotipo feito por <a href="https://www.designevo.com/" class="evo" target="_blank" title="Criador de Logótipos Online">DesignEvo.</a>
+			<div class="icone">
+				<a href="http://www.twitter.com.br" target="_blank"> <img class="iconeredesocial" src="imagem/twitter.png" /></a>
+				<a href="http://www.facebook.com.br" target="_blank"><img class="iconeredesocial" src="imagem/facebook.png"/></a>
+				<a href="https://www.instagram.com/accounts/login/?hl=pt-br" target="_blank"><img class="iconeredesocial" src="imagem/instagram.png"/><a>
+				<a href="https://plus.google.com/?hl=pt-BR" target="_blank"><img class="iconeredesocial" src="imagem/google.png"/></a>
+			</div>
+			
+		</div>
+
+
+		</body>	
+	
+
+</html>
