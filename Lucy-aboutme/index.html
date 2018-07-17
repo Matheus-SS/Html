@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link type="text/css" rel="stylesheet" href="assets/css/estilo.css"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=1=no">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+
+	<script type="text/javascript">
+		
+window.onload = function(){
+	document.querySelector(".toggle").addEventListener("click", function(){
+		if(document.querySelector(" .nav-menu  ul").style.display == 'flex'){
+			document.querySelector(" .nav-menu  ul").style.display ='none';
+		}else{
+			document.querySelector(".nav-menu  ul").style.display = 'flex';
+		}
+	});
+};	
+
+	</script>
+	<title>Lucy-About-me Page</title>
+</head>
+<body>
+	
+	<header>
+		<div class="container-home">
+			
+		<div class="logo">Lucy</div>
+	
+				<nav class="nav-menu">
+<!--menu responsivo--><a class="toggle">Menu</a><!--  <----menu responsivo-->
+					<ul>
+						<li class="active"><a href="#">HOME</a></li>
+						<li><a href="#aboutme">ABOUT ME</a></li>
+						<li><a href="#exp">Experiencia</a></li>
+						<li><a href="#dep">depoimento</a></li>
+						<li><a href="#contato">contato</a></li>
+
+					</ul>
+				</nav>
+			
+		</div>
+	</header>
+
+	<section class="container">
+		<div class="container-home">
+				<div class="img-home">
+					
+				</div>
+			<div class="conteudo-home">
+				<h2>Hello, I am Stimulus currently based in New York city.</h2>
+				<p>Donec auctor arcu at efficitur lacinia. Praesent bibendum efficitur ipsum, et mattis tellus interdum in. Ut a dictum purus. Vestibulum non pellentesque felis, sed dignissim urna. Vestibulum id accumsan quam.</p>
+				<a href="">Get started</a>
+			</div>
+
+		</div>
+	</section>
+
+	<section id="aboutme" class="container">
+		<div class="container-home">
+			<div class="index-aboutme-text">
+				<h1>Donec auctor</h1>
+				<p class="color-yellow">Sed vulputate vitae diam quis bibendum</p>
+				<p class="color-gray">Phasellus vulputate tellus nec tortor varius elementum.
+				 Curabitur at pulvinar ante. 
+				Duis dui urna, faucibus eget felis eu, iaculis congue sem. 
+				Mauris convallis eros massa.
+				</p>
+				<p class="color-gray">Quisque viverra iaculis aliquam. Etiam volutpat, justo non aliquam bibendum, sem nibh mollis erat, quis porta odio odio at velit.</p>
+			</div>
+			<div class="index-aboutme-img">
+				
+			</div>
+			<div class="index-aboutme-skill">
+					<h1>My Skills</h1>
+					<p>Photoshop . HTML CSS JS . Web Design</p>
+				<div>
+					<strong>Frontend Design</strong>
+					<span>90%</span>
+					<br><progress value="90" max="100" style="width: 80%"></progress>
+
+					<strong>Backend processing</strong>
+					<span>70%</span>
+					<br><progress value="70" max="100" style="width: 80%"></progress>
+
+					<strong>HTML5 & CSS3</strong>
+					<span>80%</span>
+					<br><progress value="80" max="100" style="width: 80%"></progress>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="container-home">
+			<div class="box-item1">
+			
+				<a><i class="fas fa-desktop" ></i></a>
+				<h3>Interface Design</h3>
+				<p>Phasellus vulputate tellus nec tortor varius elementum. Curabitur at pulvinar ante.</p>
+			
+			</div>
+
+			<div class="box-item2">
+				<a><i class="fas fa-paper-plane"></i></a>
+				<h3>Media Strategy</h3>
+				<p>Curabitur at pulvinar ante. Duis dui urna, faucibus eget felis eu, iaculis congue sem.</p>
+			</div>
+
+			<div class="box-item3">
+				<a><i class="fas fa-calendar-alt"></i></a>
+				<h3>Mobile App</h3>
+				<p>Mauris convallis eros massa, vitae euismod arcu tempus ut. Quisque viverra iaculis.</p>
+			</div>
+
+			<div class="box-item4">
+				<a ><i class="fab fa-html5"></i></a>
+				<h3>Coding</h3>
+				<p>Mauris convallis eros massa, vitae euismod arcu tempus ut. Quisque viverra iaculis.</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="exp" class="container">
+		<div class="container-home">
+				<div class="img-exp">
+					
+				</div>
+				<div class="exp-text">
+					<div class="exp-text-top">
+						<h1>My Experiences</h1>
+						<p>Previous companies and my tasks</p>
+					</div>
+							
+						<a><i class="fas fa-desktop" ></i></a>
+							
+					<span class="media-body">
+						<h1>Graphic Designer <small>2014 Jul - 2015 Sep</small></h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</span>
+
+					<br><a><i class="fas fa-desktop" ></i></a>
+							
+					<span class="media-body">
+							<h1>Graphic Designer <small>2014 Jul - 2015 Sep</small></h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</span>
+				</div>
+		</div>
+
+		<div class="container-home">
+				<div class="exp-text">
+					<div class="img-exp2-1"></div><!--ESSA DIV ESTA AKI PARA QUANDO ESTIVER RESPONSIVO EU DAR UM DISPLAY BLOCK NELA-->
+				
+					<div class="exp-text-top">
+						<h1>My Education</h1>
+						<p>In cursus orci non ipsum gravida dignissim</p>
+					</div>
+							
+						<a><i class="fas fa-desktop" ></i></a>
+							
+					<span class="media-body">
+						<h1>Master in Design <small>2012 Jan - 2014 May</small></h1>
+						<p>Etiam iaculis elit in mauris ullamcorper auctor. Proin a sapien id orci ullamcorper dignissim eu in neque.</p>
+					</span>
+
+					<br><a><i class="fas fa-desktop" ></i></a>
+							
+					<span class="media-body">
+							<h1>Bachelor of Arts <small>2008 May - 2011 Dec</small></h1>
+							<p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+					</span>
+				</div>
+
+				<div class="img-exp2">
+				</div>
+
+		</div>
+	</section>
+
+	<section id="dep"class="container-home">
+		<div class="container-star">
+			<div class="star-text">
+				<a><i class="fas fa-star"></i></a>
+				<h2>Proin lobortis eu diam et facilisis. Fusce nisi nibh, molestie in vestibulum quis, auctor et orci.</h2>
+				<p>Curabitur at pulvinar ante. Duis dui urna, faucibus eget felis eu, iaculis congue sem.</p>
+			</div>
+			
+		</div>
+	</section>
+
+
+	<section id="contato"class="container">
+		<div class="container-home">
+			<div class="index-contactme-form">
+				<div class="contactme-inside" >
+					<h1>Say hello..</h1>
+					<p class="color-yellow">Integer ut consectetur est. In cursus orci non ipsum gravida dignissim.</p>
+					<form>
+						<input type="text" name="name" placeholder="Your name"><br><br>
+						<input type="text" name="email" placeholder="Your email"><br><br>
+						<textarea placeholder="Write your Menssage..."></textarea>
+						<br><br>
+						<input type="submit" value="Send" name="">
+					</form>
+				</div>
+			</div>
+			<div class="index-aboutme-img">
+				
+			</div>
+			<div class="index-contactme-text">
+					<div class="contactme-text-top">
+						<h3>Visit my Office</h3>
+						<p>456 New Street 22000, New York City, USA</p>
+						<h3>Contact.</h3>
+						<p>Tel:(21)98999-9999</p>
+						<p>Email:lucy@gmail.com</p>
+						<p>Blog:lucy.com</p>
+					</div>
+					
+			</div>
+		</div>
+
+	</section>
+
+	<footer>
+		<div class="container-home">
+			<div class="footer">
+				<p>Copyright © 2018 Matheus Santos
+                    
+                    | Design: templatemo</p>
+
+				<ul>
+					
+					<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+					<li><a href=""><i class="fab fa-twitter"></i></a></li>
+					<li><a href=""><i class="fab fa-instagram"></i></a></li>
+					<li><a href=""><i class="fab fa-linkedin"></i></a></li>
+					
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>
