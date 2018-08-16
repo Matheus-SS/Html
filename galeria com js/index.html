@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title></title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(#c31432,#240b36);
+        }
+        html {
+            height: 100%;
+        }
+        .container {
+            width: 900px;
+            height: 600px;
+            display:flex;
+            flex-direction: column;
+            align-items:center;
+           
+        }
+        .box {
+            margin-top: 20px;
+            width: 700px;
+            box-sizing: border-box;
+            
+            height: 250px;
+            display: flex;
+            align-items: center;
+            overflow-x:scroll;
+        }
+        .box1{
+            margin-top:10px;
+            height:300px;
+            width:600px;
+            border: 2px solid #000;
+            box-sizing:border-box;
+            
+        }
+        .box1 img{
+            height:100%;
+            width:100%;
+        }
+        .box2 {
+   
+           width:400px;
+           height:100%;
+        }
+        .box2 img {
+          height: 100%;
+          width: 100%;
+        }
+        .galeria{
+            padding:10px;
+            width:400px;
+            height:200px;
+       
+        }
+
+       
+
+       
+    </style>
+    <script>
+        function teste(elemento) {
+            if (elemento.id == 'box1') {
+                document.getElementById('box').innerHTML = "<img src= car.jpeg />";
+            }
+            if (elemento.id == 'box2') {
+                document.getElementById('box').innerHTML = "<img src= car2.jpeg />";
+            }
+            if (elemento.id == 'box3') {
+                document.getElementById('box').innerHTML = "<img src= car3.jpeg />";
+            }
+            if (elemento.id == 'box4') {
+                document.getElementById('box').innerHTML = "<img src= car4.jpeg />";
+            }
+            if (elemento.id == 'box5') {
+                document.getElementById('box').innerHTML = "<img src= caar5.jpeg />";
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <div class="container">
+       
+         <div class="box1" id="box">
+             <img src="car.jpeg" />
+        </div>
+
+        <div class="box">
+            
+            <div class="galeria">
+                <div class="box2" id="box1" onclick="teste(this)">
+                    <img src="car.jpeg" />
+                </div>
+            </div>
+
+            <div class="galeria">
+                <div class="box2" id="box2" onclick="teste(this)">
+                    <img src="car2.jpeg" />
+                </div>
+            </div>
+
+            <div class="galeria">
+                <div class="box2" id="box3" onclick="teste(this)">
+                    <img src="car3.jpeg" />
+                </div>
+            </div>
+
+            <div class="galeria">
+                <div class="box2" id="box4" onclick="teste(this)">
+                    <img src="car4.jpeg" />
+                </div>
+            </div>
+
+            <div class="galeria">
+                <div class="box2" id="box5" onclick="teste(this)">
+                    <img src="caar5.jpeg" />
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
