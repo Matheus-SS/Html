@@ -1,0 +1,38 @@
+
+.box-form{
+	padding: 20px;
+	width: 300px;
+	box-sizing: border-box;
+	max-width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: linear-gradient(45deg,#52c234,#061700);
+	box-shadow: 0px 0px 8px 1px #22c517;
+
+}
+.box-form .input-box{
+	width: 100%;
+	margin-bottom:30px;
+
+}
+.box-form .input-box input[type="text"],.box-form .input-box input[type="password"]{
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid black;
+	outline: none;
+	height: 30px;
+	color: #fff;
+	background: transparent;
+}
+.box-form .input-box input[type="text"]::placeholder,.box-form .input-box input[type="password"]::placeholder{
+	color: #fff;
+}
+.box-form input[type="submit"]{
+	height: 30px;
+	border-radius: 5px;
+	color: #fff;
+	background: #000;
+	cursor: pointer;
+}
