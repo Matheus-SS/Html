@@ -1,5 +1,5 @@
 <?php //conexao com o banco
-$dsn = "mysql:dbname=projeto_caixaeletronica;host=localhost;charset=utf8";
+$dsn = "mysql:dbname=projeto_caixaeletronico;host=localhost;charset=utf8";
 $dbuser="root";
 $dbpass="";
 try{

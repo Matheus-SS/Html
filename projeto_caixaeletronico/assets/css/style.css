@@ -1,4 +1,7 @@
-
+body{
+	background:linear-gradient(45deg,#232526,#414345);
+	margin: 1px;
+}
 .box-form{
 	padding: 20px;
 	width: 300px;
@@ -35,4 +38,11 @@
 	color: #fff;
 	background: #000;
 	cursor: pointer;
+}
+.error{
+	color: red;
+	font-weight: bold;
+}
+#senhaCaps{
+	display: none;
 }

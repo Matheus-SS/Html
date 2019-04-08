@@ -23,9 +23,11 @@ if (isset($_POST['agencia']) && empty($_POST['agencia']) == false) {
 		exit;
 	}else{
 		header("Location:../login.php");
+		
 		exit;
 	}
 }else{
+	echo "erro";
 		header("Location:../login.php");
 		exit;
 	}
