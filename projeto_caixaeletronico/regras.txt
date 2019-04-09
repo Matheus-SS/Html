@@ -30,7 +30,7 @@ LOGIN{
 
 -campo conta apenas numeros e apenas 5 digitos e mostrar erro quando tiver com o campo menor que 5 e quando não existir essa conta.Obs:utilizar jquery validate com jquery mask.(check)
 
--campo senha aceitar maximo 15 caracteres e minimo 3,letras maiusculas e minuscula e numeros apenas , não aceitar caracteres especiais, mostrar quando a tecla de capslock estiver ativada.(CHECK)
+-campo senha aceitar maximo 15 caracteres e minimo 3,letras maiusculas e minuscula e numeros apenas , não aceitar caracteres especiais, mostrar quando a tecla de capslock estiver ativada.(check)
 
 -mensagem de erro quando não houver conta ,ou nao haver agencia ou senha errada Obs:Utilizar session com bootstrap (CHECK)
 }
