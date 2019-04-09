@@ -27,18 +27,30 @@ if(isset($_SESSION['banco']) && empty($_SESSION['banco']) == false){
 	<title>Caixa Eletronico</title>
 	<meta charset="UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<link rel="stylesheet" href="assets/css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/fontawesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
 </head>
 
 <body>
+<div class="main">
+	
+
+<div class="sidebar">
 	<h1>Caixa XYZ</h1>
-	Titular: <?php echo $info['titular'];?> <br/>
-	Agencia: <?php echo $info['agencia'];?> <br/>
-	Conta: <?php echo $info['conta'];?><br/>
-	Saldo: <?php echo $info['saldo'];?><br/>
-	<a href="sair.php">Sair</a>
-	<hr/>
-	<h3>Movimentação/Extrato</h3>
+	<ul>
+		<li><strong>Titular:</strong> <?php echo $info['titular'];?></li>
+		<li><strong>Agencia: </strong><?php echo $info['agencia'];?></li>
+		<li><strong>Conta:</strong> <?php echo $info['conta'];?></li>
+		<li><strong>Saldo:</strong> <?php echo $info['saldo'];?></li>
+
+	</ul> 
+</div>
+	
+
+
+	<div class="content">
+		<h3>Movimentação/Extrato</h3>
 	<a href="add-transacao.php"> Adicionar Transação</a>
 	<table border="1" width="400px">
 		<tr>
@@ -69,5 +81,7 @@ if(isset($_SESSION['banco']) && empty($_SESSION['banco']) == false){
 			?>
 
 	</table>
+	</div>
+</div>
 </body>
 </html>

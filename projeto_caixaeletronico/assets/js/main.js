@@ -4,13 +4,17 @@ $(document).ready(function(){
 	$('#conta').mask("00000");
 	$('#senha').mask("AAAAAAAAAAAAAAA");
 
-	$('#senha').keyup(function(event){
-		if (event.getModifierState("CapsLock")) {
+function verificarCapslock(){ //funçao que verifica o estado do capslock
+		$('#senha').keyup(function(event){
+		if (event.originalEvent.getModifierState("CapsLock")) { 
 			$('#senhaCaps').show();
 		}else{
 			$('#senhaCaps').hide();
 		}
 	});
+}
+
+$('#senha').focus(verificarCapslock()); //chamando a funçao de verificar o capslock
 
 	$("#loginForm").validate({
 		rules:{
@@ -42,6 +46,9 @@ $(document).ready(function(){
 				}
 			}
 		});
+
+
+$('.alert').delay(1900).fadeOut(); // alert de ERRO senha do login desaparecer com o tempo
 
 });
 

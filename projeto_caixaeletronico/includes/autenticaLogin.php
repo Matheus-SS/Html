@@ -22,8 +22,9 @@ if (isset($_POST['agencia']) && empty($_POST['agencia']) == false) {
 		header("Location:../index.php");
 		exit;
 	}else{
+		$_SESSION['msgAlert'] = "Agencia e/ou contas e/ou senha errados";
+		$_SESSION['classAlert'] = "alert alert-danger";
 		header("Location:../login.php");
-		
 		exit;
 	}
 }else{
