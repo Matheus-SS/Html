@@ -52,12 +52,12 @@ $('.alert').delay(1900).fadeOut(); // alert de ERRO senha do login desaparecer c
 
 
 // JS INDEX NAV
-$('#btn-mob').click(function(){
-	$('.sidebar').show().css('width','100%');
+$('#btn-mob').click(function(){ // ao clicar no botao abre o sidebar aplicando esses atributos
+	$('#sidebar').show().css({'width':'100%','padding':'20px'});
 });
+$('#btn-close').click(function(){ // ao clicar no botao fecha o sidebar aplicando esses atributos
+	$('#sidebar').css({'width':'0%','overflow-x':'hidden','padding':'0'});
 
-$('#btn-close').click(function(){
-	$('.sidebar').hide().css('width','0%');
 });
 
 

@@ -36,9 +36,9 @@ LOGIN{
 }
 
 INDEX{
--fazer uma menu vertical com os dados da conta ,talvez usar includes para repetir essa informção em varias abas.
+-fazer uma menu vertical com os dados da conta ,talvez usar includes para repetir essa informção em varias abas.(check)
 
--usar bootstrap para fazer a tabela de movimentação responsiva.
+-usar bootstrap para fazer a tabela de movimentação responsiva.(check)
  
 }
 

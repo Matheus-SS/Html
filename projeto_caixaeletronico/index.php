@@ -1,59 +1,19 @@
 <?php
 session_start();
 require 'includes/config.php';
-if(isset($_SESSION['banco']) && empty($_SESSION['banco']) == false){
-	$id = $_SESSION['banco'];
-
-	$sql = $pdo->prepare("SELECT * FROM contas WHERE id = ?");
-	$sql->bindValue(1,$id);
-	$sql->execute();
-
-	if ($sql->rowCount() > 0) {
-		$info = $sql->fetch();
-	}else{
-		header("Location:login.php");
-	exit;
-	}
-
-}else{
-	header("Location:login.php");
-	exit;
-}
+include 'includes/info.php';
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Caixa Eletronico</title>
-	<meta charset="UTF-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/fontawesome.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
-	<script src="assets/js/jquery.js"></script>
-	<script src="assets/js/main.js"></script>
-	<script src="assets/js/jquery.mask.min.js"></script>
-	<script src="assets/js/jquery.validate.js"></script>
+	<?php include "includes/header.php"?>
 </head>
 
 <body>
-
-<div class="sidebar">
-	<div class="btn-close" id="btn-close">
-		<i class="fas fa-times"></i>
-	</div>
-	<h1>Caixa XYZ</h1>
-	<ul>
-		<li><strong>Titular:</strong> <?php echo $info['titular'];?></li>
-		<li><strong>Agencia: </strong><?php echo $info['agencia'];?></li>
-		<li><strong>Conta:</strong> <?php echo $info['conta'];?></li>
-		<li><strong>Saldo: R$</strong><?php echo $info['saldo'];?></li>
-
-	</ul> 
-</div>
+<?php include "includes/sidebar.php"?>
 	
-
-
 <div class="content">
 
 	<div class="btn-mob" id="btn-mob">

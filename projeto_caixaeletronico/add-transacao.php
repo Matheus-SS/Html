@@ -1,16 +1,21 @@
 <?php
 session_start();
 require "includes/config.php";
+include 'includes/info.php';
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Transação</title>
-	<meta charset="UTF-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<link rel="stylesheet" href="assets/css/style.css"/>
+	<?php include "includes/header.php"?>
 </head>
 <body>
+
+<?php include "includes/sidebar.php"?>
+<div class="content">
+	<div class="btn-mob" id="btn-mob">
+			<i class="fas fa-bars"></i>
+		</div>
 <div class="box-form">
 	<form method="POST" action="includes/autenticaTransacao.php">
 		<div class="input-box">
@@ -28,6 +33,7 @@ require "includes/config.php";
 
 		<input type="submit" value="Efetuar transação">
 	</form>
+</div>
 </div>
 </body>
 </html>
