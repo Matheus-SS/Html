@@ -50,5 +50,16 @@ $('#senha').focus(verificarCapslock()); //chamando a funçao de verificar o caps
 
 $('.alert').delay(1900).fadeOut(); // alert de ERRO senha do login desaparecer com o tempo
 
+
+// JS INDEX NAV
+$('#btn-mob').click(function(){
+	$('.sidebar').show().css('width','100%');
+});
+
+$('#btn-close').click(function(){
+	$('.sidebar').hide().css('width','0%');
+});
+
+
 });
 

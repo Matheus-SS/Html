@@ -1,3 +1,4 @@
+/*CSS LOGIN*/
 body{
 	background-image: url("../img/bgBlack.jpg");
 	background-attachment: fixed;
@@ -56,29 +57,79 @@ body{
 #senhaCaps{
 	display: none;
 }
-.main{
-	display: flex;
-}
+
+/*------------ CSS INDEX -----------------*/
+
 .sidebar{
-  padding-right: 20px;
-  width: 220px;
+  padding: 20px;
+  width: 250px;
   background: linear-gradient(45deg,#52c234,#061700);
+  position: fixed;
+  height: 100%;
+  z-index: 1;
+  color: #fff;
+  font-size: 20px;
+  transition: width .5s;
+
 }
-.sidebar h1{
-	color: #fff;
-}
+
 .sidebar ul{
 	padding: 0;
 	margin: 0;
 }
 .sidebar ul li{
 	list-style: none;
-	color: #fff;
 	margin-right: 10px;
+	margin-bottom: 5px;
 }
 .content{
-
+margin-left: 250px;
+padding: 20px;
 }
-.content h3{
+.content h3 {
+ color: #fff;
+ margin-left: 10px;
+ margin-bottom: 20px;
+}
+.table tr{
+	font-weight: bolder;
+}
+.table td{
 	color: #fff;
+}
+.content .btn-transacao a {
+	height: 40px;
+	background-color: green;
+	color: #fff;
+	padding: 10px;
+	margin: 10px;
+	border-radius:5px;
+	text-decoration: none;
+}
+.btn-mob{
+	font-size: 30px;
+	color: #fff;
+	cursor: pointer;
+	margin-left: 10px;
+	display: none;
+}
+.btn-close{
+	text-align:right;
+	display: none;
+}
+
+@media (max-width: 600px){
+.sidebar{
+	display: none;
+	text-align: center;
+}
+.content{
+	margin-left:0; 
+}
+.btn-mob{
+	display: block;
+}
+.btn-close{
+	display: block;
+}
 }
