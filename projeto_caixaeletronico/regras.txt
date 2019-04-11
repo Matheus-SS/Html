@@ -8,14 +8,14 @@ titula varchat(100) utf8_general_ci;
 agencia int(11);
 conta int(11);
 senha varchar(32);
-saldo float;
+saldo DECIMAL(13,2); // dinheiro como decimal e não float para maior precisao das operações
 }
 
 tabela historico {
 id int(11) primary key auto_increment;
 id_conta int(11);
 tipo tinyint(1);
-valor float;
+valor DECIMAL(13,2);
 data_operacao datetime;
 }
 
@@ -44,6 +44,6 @@ INDEX{
 
 TRANSAÇÃO{
 -editar o option de "Tipo de Conta" usar CSS;
--não deixar campo valor vazio utilizar require no HTML ,NÂO deixar fazer uma transação com valor 0,utilizar o jquery mask para o campo valor,
-não deixar fazer uma retirada maior que o saldo disponível,talvez enviar um alert utilizando o sweet alerts
+-não deixar campo valor vazio utilizar require no HTML ,NÂO deixar fazer uma transação com valor 0,utilizar o jquery mask para o campo valor(check);
+
 }

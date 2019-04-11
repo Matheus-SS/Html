@@ -7,7 +7,7 @@ if(isset($_SESSION['banco']) && empty($_SESSION['banco']) == false){
 	if(isset($_POST['tipo'])){
 
 		$tipo = $_POST['tipo'];
-		$valor = str_replace("," , "." ,$_POST['valor']); //trocando toda virgula por ponto com a funcao str_replace;
+		$valor = str_replace("," ,"",$_POST['valor']); //trocando toda virgula por nada com a funcao str_replace;
 		$valor = floatval($valor);
 
 		$sql = $pdo->prepare("INSERT INTO historico(id_conta,tipo,valor,data_operacao) VALUES (?,?,?,NOW() ) ");
@@ -29,7 +29,7 @@ if(isset($_SESSION['banco']) && empty($_SESSION['banco']) == false){
 			$sql->bindValue(2,$_SESSION['banco']);
 			$sql->execute();
 		}
-		header("Location:../index.php");
+		header("Location:../add-transacao.php");
 		exit;
 	}else{
 		header("Location:../add-transacao.php");

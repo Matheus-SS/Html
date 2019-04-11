@@ -7,3 +7,4 @@
 	<script src="assets/js/main.js"></script>
 	<script src="assets/js/jquery.mask.min.js"></script>
 	<script src="assets/js/jquery.validate.js"></script>
+	<script src="assets/js/jquery.maskMoney.min.js"></script>

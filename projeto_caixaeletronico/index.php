@@ -34,7 +34,8 @@ include 'includes/info.php';
 				</thead>
 				<tbody>
 					<?php
-						$sql = $pdo->prepare("SELECT * FROM historico ORDER BY data_operacao DESC");
+						$sql = $pdo->prepare("SELECT * FROM historico WHERE id_conta=? ORDER BY data_operacao DESC");
+						$sql->bindValue(1,$id);
 						$sql->execute();
 
 						if($sql->rowCount()>0){

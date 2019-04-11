@@ -17,7 +17,7 @@ include 'includes/info.php';
 			<i class="fas fa-bars"></i>
 		</div>
 <div class="box-form">
-	<form method="POST" action="includes/autenticaTransacao.php">
+	<form method="POST" action="includes/autenticaTransacao.php" id="transacaoForm">
 		<div class="input-box">
 			<label style="color:white">Tipo de Conta</label>
 			<select name="tipo">
@@ -28,7 +28,7 @@ include 'includes/info.php';
 
 		<div class="input-box">
 			<label></label>
-			<input type="text" name="valor" placeholder="Valor" pattern="[0-9,.]{1,}" autocomplete="off">
+			<input type="tel" name="valor" placeholder="Valor" id="valor" autocomplete="off">
 		</div>
 
 		<input type="submit" value="Efetuar transação">

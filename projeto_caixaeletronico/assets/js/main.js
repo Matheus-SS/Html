@@ -60,6 +60,27 @@ $('#btn-close').click(function(){ // ao clicar no botao fecha o sidebar aplicand
 
 });
 
+//VALIDAÇÃO DO FORM DE TRANSACAO PAGINA add-transacao.php
+$('#valor').maskMoney(); //BIBLIOTECA JQUERY MASKMONEY
 
+
+$('#transacaoForm').validate({
+	rules:{
+		valor:{
+			required:true
+			
+			}
+		},
+		messages:{
+			valor:{
+				required:"Campo obrigatório",
+				min:"não é permitida a transacao de valores menor que 1 real"
+		}
+		
+	}
 });
+
+
+
+});//FIM DO DOCUMENT READY
 
