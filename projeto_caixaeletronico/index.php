@@ -45,9 +45,9 @@ include 'includes/info.php';
 								<td><?php echo date('d/m/Y H:i',strtotime($item['data_operacao'])); ?></td>
 								<td>
 									<?php if($item['tipo'] == '0'):?>
-										<font color="green">R$ <?php echo $item['valor'] ?> </font>
+										<font color="green">R$ <?php echo number_format($item['valor'],2,".",","); ?> </font>
 									<?php else:?>
-										<font color="red">R$ -<?php echo $item['valor']; ?> </font>
+										<font color="red">R$ -<?php echo number_format($item['valor'],2,".",","); ?> </font>
 									<?php endif; ?>
 								</td>
 							</tr>
