@@ -13,14 +13,14 @@ include 'includes/info.php';
 
 <body>
 <?php include "includes/sidebar.php"?>
-	
+
 <div class="content">
 
 	<div class="btn-mob" id="btn-mob">
 		<i class="fas fa-bars"></i>
 	</div>
 
-		<h3>Movimentação/Extrato</h3>
+	<h3>Movimentação/Extrato</h3>
 		<div class="btn-transacao" style="margin-left: 4px;">
 			<a href="add-transacao.php"> Transação</a>
 		</div>

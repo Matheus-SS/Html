@@ -2,6 +2,7 @@
 $dsn = "mysql:dbname=projeto_caixaeletronica;host=localhost;charset=utf8";
 $dbuser="root";
 $dbpass="";
+
 try{
 $pdo = new PDO($dsn,$dbuser,$dbpass);
 
