@@ -1,4 +1,10 @@
 /*CSS LOGIN*/
+
+html{
+	min-height: 100%;
+    position: relative; /* COLOCANDO ESSES DOIS ATRIBUTOS JUNTO COM O BOTTOM 0 e POSITION ABSOLUTE NO FOOTER. O FOOTER FICARA NO FINAL DA PAGINA SEMPRE*/
+
+}
 body{
 	background-image: url("../img/bgBlack.jpg");
 	background-attachment: fixed;
@@ -86,6 +92,7 @@ body{
 .content{
 margin-left: 250px;
 padding: 20px;
+margin-bottom: 70px;
 }
 .content h3 {
  color: #fff;
@@ -125,7 +132,19 @@ border: solid 2px;
 font-size: 13px;
 font-weight: bolder;
 }
-
+footer{
+	width: 100%;
+	height: 70px;
+	opacity: 0.5;
+	line-height: 70px;
+	text-align: right;
+	position: absolute;
+	bottom: 0;
+	padding-right: 10px;
+    color: #fff;
+    font-weight: 700;
+    box-sizing: border-box;
+}
 /*--------MEDIA QUERIE----------*/
 @media (max-width: 600px){
 .sidebar{

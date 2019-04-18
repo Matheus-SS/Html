@@ -35,5 +35,9 @@ include 'includes/info.php';
 	</form>
 </div>
 </div>
+
+<footer>
+		Developed By Matheus Santos
+	</footer>
 </body>
 </html>

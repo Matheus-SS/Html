@@ -59,7 +59,12 @@ include 'includes/info.php';
 			</table>
 		</div>
 	</div>
+
+	
 </div>
 
+	<footer>
+		Developed By Matheus Santos
+	</footer>
 </body>
 </html>

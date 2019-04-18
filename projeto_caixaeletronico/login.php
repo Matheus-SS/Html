@@ -6,6 +6,7 @@ session_start();
 <!DOCTYPE html>
 <html>
 <head>
+
 	<title>Caixa Eletronico</title>
 	<?php include "includes/header.php"?>
 </head>
@@ -42,5 +43,8 @@ session_start();
 		<input type="submit" value="Entrar">
 	</form>
 </div>
+<footer>
+		Developed By Matheus Santos
+	</footer>
 </body>
 </html>
